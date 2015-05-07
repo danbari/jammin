@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sessions</h1>
+<head> 
+  <title> Sessions </title>
+  <meta charset = "UTF-8">
+</head>
+<nav> <div id=float>
+  
+    <nav id="navigation">
+      <ul>
+          <li><a href="http://localhost:3000"> Home </a>  </li>
+          <li><a href="http://localhost:3000/about/developer">The Team</a> </li>
+          <li><a href="http://localhost:3000/sessions">Admin</a>  </li>
+          <li><a href="http://localhost:3000/users">Join</a>  </li>
+          
+        </ul>
+    </nav> 
+
+</div>
+
+
+<center>
+  <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Users</th>
+      <th>Instruments</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <br>
+  <div id="addnew"><tbody>
+    <% @sessions.each do |session| %>
+      <tr>
+        <td><%= session.title %></td>
+        <td><%= session.users %></td>
+        <td><%= session.instruments %></td>
+        <td><%= link_to 'Show', session %></td>
+        <td><%= link_to 'Edit', edit_session_path(session) %></td>
+        <td><%= link_to 'Destroy', session, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  </div>
+</table>
+
+<br>
+<%= link_to 'New Session', new_session_path %>
+<center><p>&copy; All right reserved by Radcircle</p></center>
