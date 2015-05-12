@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'about/developer'
+  get 'index/developer'
+
+  get 'index/admin'
 
   resources :users
   resources :users
