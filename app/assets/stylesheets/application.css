@@ -24,10 +24,6 @@ h2 {
 			
 }
 
-#addnew
-{
-	text-align: center;
-}
 
 nav ul {
 	
@@ -77,5 +73,9 @@ nav a:hover {
 	border-radius: 10px;  this rounds the corners 10px 10px 0 0 creates tab like buttons!   	
 }
 
+.editbutton {
+	width:150px;
+	color: green;
+}
 
 
