@@ -16,10 +16,8 @@ h2 {
 }
 }
 
-#float {
-	margin: auto;
-	width: 80%;
-	float: center;
+.float {
+	width: 110%;
 	padding: 110%;
 			
 }
@@ -27,7 +25,7 @@ h2 {
 
 nav ul {
 	
-	width: 70%;
+	width: 80%;
 	text-align: center;
 	font-size: 12px;
 	padding: 5%; 
@@ -40,10 +38,10 @@ nav ul {
 nav ul li {
 	list-style-type: none;
 	margin:auto;	
-	width: 24%;
+	width: 30%;
 	height: 4em;
 	background-color:#CACACA;
-	float: left;
+	float: right;
 	border-radius: 15px;
 }
 
@@ -76,6 +74,10 @@ nav a:hover {
 .editbutton {
 	width:150px;
 	color: green;
+}
+
+body {
+	text-align: center;
 }
 
 
