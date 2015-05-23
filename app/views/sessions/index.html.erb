@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
+  <%= content_for :title do %>
+ <%= stylesheet_link_tag    "session", media: 'all', 'data-turbolinks-track' => true %>
 
+
+<% end %>
 <h1>Listing Sessions</h1>
 <head> 
   <title> Sessions </title>
@@ -48,4 +52,8 @@
 
 <br>
 <div class="editbutton"><%= link_to 'New Session', new_session_path %></div>
+<br>
+
+<div id="backbutton"><body> <p> Go Back <a href="http://localhost:3000/index/admin"> Click Here </a></p></body></div>
+
 <center><p>&copy; All right reserved by Radcircle</p></center>

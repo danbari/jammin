@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'index/developer'
-
   get 'index/admin'
 
   resources :users

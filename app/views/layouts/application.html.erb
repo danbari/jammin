@@ -5,6 +5,13 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <head>
+  <title><%= yield(:title) %></title>
+  <!-- Additional header tags here -->
+<body>
+  <!-- If all pages contain a headline tag, it's preferable to put that in the layout file too -->
+</body>
+
 </head>
 <body>
 
